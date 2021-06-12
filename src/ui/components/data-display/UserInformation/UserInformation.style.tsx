@@ -14,6 +14,7 @@ export const UserInformationContainer = styled("div")`
     "avatar description";
   background-color: ${({ theme }) => theme.palette.grey[50]};
   padding: ${({ theme }) => theme.spacing(3)};
+  gap: ${({ theme }) => theme.spacing(0.5) + " " + theme.spacing(1)};
   align-items: center;
 `;
 
@@ -32,6 +33,9 @@ export const UserDescription = styled("div")`
 
 export const AvatarStyled = styled(Avatar)`
   grid-area: avatar;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
 `;
 
 export const RatingStyled = styled(Rating)`
