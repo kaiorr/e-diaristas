@@ -5,15 +5,15 @@ import {
   FooterTitle,
   AppList,
 } from "./Footer.style";
-import { Typography } from "@material-ui/core";
+import { Typography, Box } from "@material-ui/core";
 
 export const Footer: React.FC = () => {
   return (
     <FooterStyled>
       <FooterContainer>
-        <div>
+        <Box sx={{ maxWidth: '400px' }}>
           <FooterTitle>Quem Somos</FooterTitle>
-          <Typography>
+          <Typography variant={'body2'} sx={{ mt: 2 }}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sit
             aperiam distinctio nemo totam tempore, aliquid veritatis rem soluta
             ex doloremque eveniet praesentium quibusdam, cum mollitia eos sequi
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
             praesentium laboriosam in. Quo, sunt nihil atque placeat ut saepe
             ab.
           </Typography>
-        </div>
+        </Box>
         <div>
           <FooterTitle>Baixar nosso App</FooterTitle>
           <AppList>
